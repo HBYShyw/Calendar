@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/Calendar/assets/res/any/colors.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+
+    <color name="pressed">#330066ff</color>
+
+    <color name="today_highlight_color">#0033b5e5</color>
+    <!--transsion start liaohuan-->
+    <color name="select_highlight_color">#33b5e5</color>
+    <!--transsion end-->
+
+    <!--TRANSSION START hyw-->
+    <!-- actionbar -->
+    <color name="ts_action_bar_title_color">#090909</color>
+    <color name="ts_action_bar_divider_color">#e0dfdf</color>
+    <color name="ts_colorPrimaryDark">#f9f9f9</color>
+    <color name="ts_colorPrimary">#f9f9f9</color>
+    <color name="ts_colorAccent">#ffc600</color>
+    <color name="ts_colorControlActivated">#ffc600</color>
+    <color name="ts_colorControlNormal">#090909</color>
+    <color name="ts_edit_text_color">#6d6d6d</color>
+    <color name="ts_hint_text_color">#606d6d6d</color>
+    <color name="ts_edit_text_select_bg_color">#e5e5e5</color>
+    <color name="ts_white">#ffffff</color>
+    <color name="ts_white_light">#60ffffff</color>
+    <color name="ts_transparent">#00000000</color>
+    <color name="ts_black">#000000</color>
+    <color name="ts_category_btn_text_color">#191919</color>
+    <color name="ts_category_divider_color">#f0f0f0</color>
+    <color name="ts_capacity_large_text_color">#383838</color>
+    <color name="ts_capacity_text_color">#868686</color>
+    <color name="ts_category_legend_text_color">#494949</color>
+    <color name="ts_list_divider_color">#f2f2f2</color>
+
+    <!--festival-->
+    <color name="header_background">#FFFFFFFF</color>
+    <color name="festival_label_text_color">#f4293d</color>
+    <color name="grid_lines">#e5e5e5</color>
+    <color name="week_number_no_focus">#50f4293d</color>
+    <color name="week_number_focus">#f4293d</color>
+
+
+    <!--<color name="background_color">#e633b5e5</color> &lt;!&ndash;开启应用中间界面&ndash;&gt;-->
+    <color name="background_color">#FFFFFFFF</color>
+
+    <!--week-->
+    <!--当天线的颜色-->
+    <color name="currenttimeline_color">#f4293d</color>
+
+    <!--month-->
+    <color name="month_select_bgColor">#f9f9f9</color>
+
+    <!--TRANSSION END hyw-->
+    <color name="colorAccent">#FF4081</color> <!--悬浮按钮-->
+
+    <!-- The app wide background color -->
+    <!--<color name="background_color">#fafafa</color>-->
+    <color name="event_background">#ffc3d9ff</color>
+    <color name="panel_text_foreground">#ffffffff</color>
+    <color name="calendar_event_text_color">#ffFFFFFF</color>
+
+    <color name="calendar_owner_text_color">#777777</color>
+    <color name="calendar_date_range_color">#80000000</color>
+    <color name="calendar_sync_bc">#ffffffff</color>
+
+    <!--hyw fix <color name="week_saturday">#80333333</color> 周视图星期六颜色-->
+    <color name="week_saturday">#f4293d</color>
+    <!--hyw fix <color name="week_sunday">#80333333</color> 周视图星期天颜色-->
+    <color name="week_sunday">#f4293d</color>
+    <color name="calendar_future_bg_color">#ffffffff</color> <!--当前时间之后的区域色值-->
+    <color name="calendar_hour_label">#ff666666</color>
+    <color name="calendar_ampm_label">#ff999999</color>
+    <color name="calendar_hour_background">#ffEEEEEE</color>
+
+    <!--<color name="calendar_date_banner_background">#FFEEEEEE</color>-->
+    <color name="calendar_date_banner_background">#f9f9f9</color>
+
+    <color name="calendar_date_banner_text_color">#ff666666</color>
+
+    <color name="calendar_grid_area_selected">#e633b5e5</color>
+
+
+    <color name="calendar_grid_line_inner_horizontal_color">#FFCCCCCC</color>
+    <color name="calendar_grid_line_inner_vertical_color">#FFCCCCCC</color>
+    <color name="calendar_grid_line_highlight_color">#ff707070</color>
+
+    <color name="mini_month_bg_color">#FFFFFFFF</color>
+    <color name="mini_month_today_outline_color">#FF000000</color>
+
+    <!--hyw fix <color name="month_day_number">#FF333333</color> 获得焦点的天-->
+    <color name="month_day_number">#090909</color>
+    <color name="month_mini_day_number">#FF000000</color>
+    <!--hyw fix <color name="month_day_number_other">#FF999999 未获得焦点的天</color>-->
+    <color name="month_day_number_other">#d8d8d8</color>
+    <color name="month_week_num_color">#FF999999</color>
+    <!--hyw fix <color name="month_day_names_color">#FF999999</color> 其余周期颜色-->
+    <color name="month_day_names_color">#343434</color>
+    <!--<color name="month_today_number">#FF333333</color> 今天-->
+    <color name="month_today_number">#FFFFFFFF</color>
+    <color name="month_event_color">#FF333333</color>
+    <color name="month_event_extra_color">#FF666666</color>
+    <color name="month_event_other_color">#FF666666</color>
+    <color name="month_event_extra_other_color">#4C999999</color>
+    <!--hyw fix <color name="month_saturday">#80333333</color> 月视图星期六颜色-->
+    <color name="month_saturday">#f4293d</color>
+    <!--hyw fix <color name="month_sunday">#80333333</color> 月视图星期天颜色-->
+    <color name="month_sunday">#f4293d</color>
+
+    <!--hyw fix <color name="month_grid_lines">#ffCCCCCC</color>
+    月视图分割线-->
+    <color name="month_grid_lines">#e5e5e5</color>
+    <!--hyw fix <color name="month_other_month_day_number">#ff939497</color>
+    月视图周几字体颜色-->
+    <color name="month_other_month_day_number">#343434</color>
+    <color name="month_other_bgcolor">#FFEEEEEE</color>
+    <color name="month_selected_week_bgcolor">#FFDDDDDD</color>
+
+    <!--月视图当天背景颜色-->
+    <!--hyw fix <color name="month_today_bgcolor">#FFFFFFFF</color>-->
+    <color name="month_today_bgcolor">#f4293d</color>
+    <!--hyw fix <color name="month_bgcolor">#FFE5E5E5
+    父控件View的背景色</color>-->
+    <color name="month_bgcolor">#FFFFFFFF</color>
+
+    <color name="month_dna_conflict_time_color">#FF333333</color>
+
+    <color name="event_center">#ff6bd697</color>
+    <color name="edit_event_separator">#FFDDDDDD</color>
+
+    <color name="calendar_visible">#ff000000</color>
+    <color name="calendar_hidden">#ff808080</color>
+    <color name="calendar_secondary_visible">#ff323232</color>
+    <color name="calendar_secondary_hidden">#ff808080</color>
+
+    <!-- Text color of the date in the Calendar widget -->
+
+    <color name="agenda_item_not_selected">#00000000</color>
+    <!-- Text color of declined events in agenda view -->
+    <color name="agenda_item_declined_color">#66333333</color>
+    <!-- Text color of non-declined events in agenda view -->
+    <color name="agenda_item_standard_color">#FF333333</color>
+    <!-- Background Color of present/future events in agenda view  -->
+    <color name="agenda_day_bar_background_color">#FFFFFFFF</color>
+    <!-- Background Color of past events in agenda view  -->
+    <color name="agenda_past_days_bar_background_color">#FFDDDDDD</color>
+    <!-- Color of the separator between the past and the present/future in agenda view  -->
+    <color name="agenda_past_present_separator_color">#FF333333</color>
+    <!-- General background color in agenda view  -->
+    <color name="agenda_general_background_color">#FFEEEEEE</color>
+    <!-- Agenda day item text color  -->
+    <color name="agenda_day_item_text_color">#FF666666</color>
+    <!-- Color of the event location's text in an agenda item  -->
+    <color name="agenda_item_where_text_color">#FF666666</color>
+    <!-- Color of the event location's text in an agenda item  -->
+    <color name="agenda_item_where_declined_text_color">#66666666</color>
+    <!-- Color of text in the calendar view selection menu -->
+    <!--hyw fix <color name="calendar_view_switch_menu_text_color">#FF666666</color> actionBar字体颜色-->
+    <color name="calendar_view_switch_menu_text_color">#090909</color>
+    <!-- Light color of text in the calendar view selection menu -->
+    <color name="calendar_view_switch_menu_text_color_light">#FF888888</color>
+    <!-- Color of the separator between items in the agenda list -->
+    <color name="agenda_list_separator_color">#FFBBBBBB</color>
+    <!-- Text color of a selected items in the agenda list - trumps all other text colors -->
+    <color name="agenda_selected_background_color">@android:color/holo_blue_dark</color>
+    <!-- Background color of a selected items in the agenda list -->
+    <color name="agenda_selected_text_color">#FFFFFFFF</color>
+    <!-- Text color of the "new event" hint in day and week views -->
+    <color name="new_event_hint_text_color">#FFFFFFFF</color>  <!--点击日视图周视图，提示显示-->
+
+    <!-- Text color of a clicked event in the day/week view -->
+    <color name="day_event_clicked_background_color">#8033B5E5</color>
+    <!-- background color for for clicked days in month view-->
+
+    <!--hyw fix <color name="day_clicked_background_color">#ff6bd697</color>-->
+    <color name="day_clicked_background_color">#FF33B5E5</color>
+
+    <!-- background color for the past -->
+    <!--<color name="day_past_background_color">#FFDDDDDD</color>-->
+    <color name="day_past_background_color">#e5e5e5</color>
+
+    <!-- Event info colors -->
+    <color name="event_info_headline_color">#FFFFFFFF</color>
+    <color name="event_info_headline_transparent_color">#B3FFFFFF</color>
+    <color name="event_info_headline_link_color">#FFFFFFFF</color>
+    <color name="event_info_organizer_color">#FF666666</color>
+    <color name="event_info_description_color">#FF666666</color>
+    <color name="event_info_body_color">#FF666666</color>
+    <color name="event_info_label_color">#FF999999</color>
+    <color name="event_info_label_background_color">#FFDDDDDD</color>
+
+    <!-- Create event colors -->
+    <color name="create_event_date_color">#FF000000</color>
+    <color name="create_event_more_details_color">#FF888888</color>
+    <color name="create_event_divider_color">#FFDDDDDD</color>
+
+    <color name="text_shadow_color">#4D000000</color>
+
+    <color name="alert_event_title">#FFFFFFFF</color>
+    <color name="alert_event_other">#FF999999</color>
+    <color name="alert_past_event">#8F999999</color>
+
+    <color name="appwidget_row_in_progress">#6633b5e5</color>
+
+    <color name="appwidget_date">#ffEEEEEE</color>
+    <color name="appwidget_week">@android:color/white</color>
+    <color name="appwidget_month">#ffEEEEEE</color>
+
+    <!-- Text color of declined events in widget view -->
+    <color name="appwidget_item_declined_color">#66333333</color>
+    <!-- Text color of non-declined events in widget view -->
+    <color name="appwidget_item_standard_color">#ff333333</color>
+    <!-- Text color for all day events in widget view -->
+    <color name="appwidget_item_allday_color">#ffffffff</color>
+
+    <color name="appwidget_title">#ffffffff</color>
+    <color name="appwidget_when">#ffffffff</color>
+    <color name="appwidget_where">#ffffffff</color>
+    <color name="appwidget_no_events">#ffffffff</color>
+
+    <color name="recurrence_picker_background">#fff2f2f2</color>
+    <color name="recurrence_bubble_text_normal">#ff737373</color>
+</resources>

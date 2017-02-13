@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ringtone_default">默认铃声</string>
+    <!--common festival-->
+    <string name="new_year">新年</string>
+    <string name="valentine_day">情人节</string>
+    <string name="women_day">妇女节</string>
+    <string name="labour_day">劳动节</string>
+    <string name="christmas">圣诞节</string>
+    <string name="boxing_day">节礼日</string>
+    <string name="good_friday">受难日</string>
+    <string name="holy_saturday">圣周六</string>
+    <string name="easter_day">复活节</string>
+    <string name="easter_monday">复活节星期一</string>
+    <string name="father_day">父亲节</string>
+    <string name="mother_day">母亲节</string>
+    <!--Al-Hijra-->
+    <string name="islamic_new_year">伊斯兰教新年</string>
+    <!--Maulid al-Nabi-->
+    <string name="islamic_al_Nabi">（圣纪节）先知穆罕默德的生日</string>
+    <!--开斋节-->
+    <string name="islamic_eid_al_fitr">开斋节</string>
+    <!--Eid Al Adha-->
+    <string name="islamic_eid_al_adha">宰牲节</string>
+    <!--计算部分共同节日-->
+    <string name="ascension_day">耶稣升天节</string>
+    <string name="Whit_Monday">圣灵降临节</string>
+    <string name="farmer_day">农民日</string>
+
+    <!--部分相同节日-->
+    <string name="independence_day">独立日</string>
+    <string name="new_year_eve">除夕</string>
+    <string name="children_day">儿童节</string>
+    <string name="assumption_day">圣母升天节</string>
+
+    <!--Nigeria-->
+    <string name="democracy_day">民主日</string>
+    <string name="commemoration_day">纪念日</string>
+
+    <!--Cote d'Ivoire-->
+    <string name="music">音乐节</string>
+    <string name="islamic_laila_tou_kadr">盖德尔夜</string>
+    <string name="all_saints_day">万圣节</string>
+    <string name="national_peace_day">国家和平日</string>
+
+    <!--Rwanda-->
+    <string name="heroes_day">国家英雄日</string>
+    <string name="liberation_day">解放日</string>
+    <string name="genocide_memorial_day">屠杀纪念日</string>
+
+    <!--Ghana-->
+    <string name="african_union_day">非洲联盟日</string>
+    <string name="republic_day">共和国日</string>
+    <string name="founder_day">创始人纪念日</string>
+
+    <!--Tanzania-->
+    <string name="karume_day">卡鲁姆日</string>
+    <string name="union_day">坦桑联合日</string>
+    <string name="saba_saba_day">萨巴节</string>
+    <string name="mwalimu_nyerere_day">尼雷尔日</string>
+
+    <!--Malawi-->
+    <string name="martyrs_day">烈士日</string>
+    <string name="kamuzu_day">卡穆祖日</string>
+    <string name="freedom_day">自由日</string>
+
+    <!--Kenya-->
+    <string name="madaraka_day">自治日</string>
+
+    <!--Cameroon-->
+    <string name="youth_day">青年节</string>
+    <string name="national_day">国庆节</string>
+    <string name="gameroons_independence_day">喀麦隆独立日</string>
+
+    <!--Egypt-->
+    <string name="coptic_christmas_day">科普特圣诞节</string>
+    <string name="revolution_day">革命日</string>
+    <string name="sinai_liberation_day">西奈自由日</string>
+    <string name="coptic_good_friday">科普特受难日</string>
+    <string name="coptic_holy_saturday">科普特圣周六</string>
+    <string name="coptic_easter_sunday">科普特复活节</string>
+    <string name="spring_festival">闻风节</string>
+    <string name="armed_forces_day">军人节</string>
+
+    <!--America-->
+    <string name="fools_day">愚人节</string>
+
+    <!--setting String-->
+    <string name="festival_setting">节假日设置</string>
+    <string name="country_festival_display">显示默认国家节假日</string>
+    <string name="system_default">系统默认</string>
+    <string name="manual_select">手动匹配</string>
+    <string name="click_popup_list">点击弹出国家列表，匹配对应节假日</string>
+    <string name="select_country">请选择国家</string>
+</resources>

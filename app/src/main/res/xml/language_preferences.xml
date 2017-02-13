@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="language_setting"
+        android:title="语言设置">
+        <ListPreference
+            android:dialogTitle="选择语言"
+            android:entries="@array/language"
+            android:entryValues="@array/language"
+            android:key="language"
+            android:summary="点击弹出语言列表"
+            android:title="多语言">
+            <!--android:summary 标题下面的小字,这个要作为选项卡才有-->
+        </ListPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

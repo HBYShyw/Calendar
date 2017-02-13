@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Choices for the "Reminder method" spinner.
+         These must be kept in sync with the reminder_methods_values array.
+         [CHAR LIMIT=10]
+    -->
+    <string-array name="reminder_methods_labels">
+        <item>Notification</item>
+        <item>Email</item>
+        <item>SMS</item>
+        <item>Alarm</item>
+    </string-array>
+
+    <!-- This maps reminder_methods_labels to internal constants. -->
+    <integer-array name="reminder_methods_values" translatable="false">
+        <item>1</item>  <!-- METHOD_ALERT -->
+        <item>2</item>  <!-- METHOD_EMAIL -->
+        <item>3</item>  <!-- METHOD_SMS -->
+        <item>4</item>  <!-- METHOD_ALARM -->
+    </integer-array>
+
+    <!-- Choices for the "Reminder minutes" spinner.
+         These must be kept in sync with the reminder_minutes_values array.
+         For consistency, the format should match what
+         EventViewUtils.constructReminderLabel() generates.  (TODO: eliminate
+         this and just generate the list from reminder_minutes_values?)
+         [CHAR LIMIT=15]
+    -->
+    <string-array name="reminder_minutes_labels">
+        <item>0 minute</item>
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+        <item>2 days</item>
+        <item>1 week</item>
+    </string-array>
+
+    <integer-array name="reminder_minutes_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>720</item>
+        <item>1440</item>
+        <item>2880</item>
+        <item>10080</item>
+    </integer-array>
+
+  <!-- Choices for the "Reminder minutes" spinner in the settings.
+         These must be kept in sync with the preferences_default_reminder_values array.
+         [CHAR LIMIT=12]
+    -->
+       <string-array name="preferences_default_reminder_labels">
+        <item>None</item>
+        <item>0 minute</item>
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+        <item>2 days</item>
+        <item>1 week</item>
+    </string-array>
+
+    <string-array name="preferences_default_reminder_values" translatable="false">
+        <item>"-1"</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"5"</item>
+        <item>"10"</item>
+        <item>"15"</item>
+        <item>"20"</item>
+        <item>"25"</item>
+        <item>"30"</item>
+        <item>"45"</item>
+        <item>"60"</item>
+        <item>"120"</item>
+        <item>"180"</item>
+        <item>"720"</item>
+        <item>"1440"</item>
+        <item>"2880"</item>
+        <item>"10080"</item>
+    </string-array>
+
+    <string-array name="preferences_week_start_day_labels">
+        <item>Locale default</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+    </string-array>
+
+    <string-array name="preferences_week_start_day_values" translatable="false">
+        <item>"-1"</item>
+        <item>"7"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+    </string-array>
+
+
+
+    <string-array name="availability">
+        <item>Busy</item>
+        <item>Available</item>
+        <item>Tentative</item>
+    </string-array>
+
+    <!-- This maps reminder_methods_labels to internal constants. -->
+    <integer-array name="availability_values" translatable="false">
+        <item>0</item>  <!-- Busy -->
+        <item>1</item>  <!-- Available -->
+        <item>2</item>  <!-- Tentative -->
+    </integer-array>
+
+    <string-array name="visibility">
+        <item>Default</item>
+        <item>Private</item>
+        <item>Public</item>
+    </string-array>
+
+    <string-array name="ordinal_labels">
+        <item>first</item>
+        <item>second</item>
+        <item>third</item>
+        <item>fourth</item>
+        <item>last</item>
+    </string-array>
+
+    <!-- Invitation responses -->
+    <string-array name="response_labels1">
+        <item>No response</item>
+        <item>Yes</item>
+        <item>Maybe</item>
+        <item>No</item>
+    </string-array>
+
+    <!-- The corresponding indices are defined in DeleteEventHelper.java -->
+    <!-- This is a list of choices displayed when the user deletes an event.
+         It only is shown when deleting a recurring event.
+    -->
+    <skip/>
+    <string-array name="delete_repeating_labels">
+        <item>Only this event</item>
+        <item>This and future events</item>
+        <item>All events</item>
+    </string-array>
+
+    <!-- DO NOT TRANSLATE These values need to correspond to the indices
+         defined in DeleteEventHelper.java-->
+    <integer-array name="delete_repeating_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
+    <!-- The corresponding indices are defined in DeleteEventHelper.java -->
+    <!-- This is the same array as above (the "delete_repeating_labels" array,
+         except that the first element "Only this event" is removed.  This
+         array exists to work-around a bug in the CalendarProvider and sync
+         code where you can't delete one instance of a repeating event that
+         was created on the phone until that event has been synced to the server.
+     -->
+    <skip/>
+    <string-array name="delete_repeating_labels_no_selected">
+        <item>This &amp; future events</item>
+        <item>All events</item>
+    </string-array>
+
+    <!-- The corresponding array indices are defined in EventInfoActivity.java -->
+    <skip/>
+    <!-- The list of choices displayed in a dialog box when the user wants to
+    respond to an invitation that repeats. -->
+    <string-array name="change_response_labels">
+        <!-- The choice for responding to only one instance of a repeating event -->
+        <item>Only this event</item>
+        <!-- The choice for responding to all instances of a repeating event -->
+        <item>All events in the series</item>
+    </string-array>
+
+    <!-- Strings for buttons in drop down menu -->
+    <string-array name="buttons_list">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Agenda</item>
+    </string-array>
+
+    <!-- Experimental options for skipping reminders. [CHAR LIMIT = 37] -->
+    <string-array name="preferences_skip_reminders_labels">
+        <!-- Default choice -->
+        <item>Only if declined</item>
+        <!-- Second option, for skipping reminders to events not yet responded to. -->
+        <item>If declined or not responded</item>
+    </string-array>
+
+    <string-array name="preferences_skip_reminders_values" translatable="false">
+        <item>declined</item>
+        <item>not_responded</item>
+    </string-array>
+
+    <!-- Recurrence picker: How events are to be repeated.  [CHAR LIMIT = 20] -->
+    <string-array name="recurrence_freq">
+        <item >REPEAT DAILY</item>
+        <item >REPEAT WEEKLY</item>
+        <item >REPEAT MONTHLY</item>
+        <item >REPEAT YEARLY</item>
+    </string-array>
+
+    <!-- The following sets of strings describe a monthly recurring event, which will repeat
+         on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or
+         the last Sunday. These are set up like this to resolve any gender-matching issues
+         that were present in some languages.
+     -->
+    <!-- Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_sun">
+        <item >on every first Sunday</item>
+        <item >on every second Sunday</item>
+        <item >on every third Sunday</item>
+        <item >on every fourth Sunday</item>
+        <item >on every last Sunday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_mon">
+        <item >on every first Monday</item>
+        <item >on every second Monday</item>
+        <item >on every third Monday</item>
+        <item >on every fourth Monday</item>
+        <item >on every last Monday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_tues">
+        <item >on every first Tuesday</item>
+        <item >on every second Tuesday</item>
+        <item >on every third Tuesday</item>
+        <item >on every fourth Tuesday</item>
+        <item >on every last Tuesday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_wed">
+        <item >on every first Wednesday</item>
+        <item >on every second Wednesday</item>
+        <item >on every third Wednesday</item>
+        <item >on every fourth Wednesday</item>
+        <item >on every last Wednesday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_thurs">
+        <item >on every first Thursday</item>
+        <item >on every second Thursday</item>
+        <item >on every third Thursday</item>
+        <item >on every fourth Thursday</item>
+        <item >on every last Thursday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_fri">
+        <item >on every first Friday</item>
+        <item >on every second Friday</item>
+        <item >on every third Friday</item>
+        <item >on every fourth Friday</item>
+        <item >on every last Friday</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+    <string-array name="repeat_by_nth_sat">
+        <item >on every first Saturday</item>
+        <item >on every second Saturday</item>
+        <item >on every third Saturday</item>
+        <item >on every fourth Saturday</item>
+        <item >on every last Saturday</item>
+    </string-array>
+
+    <!--country-->
+    <string-array name="countries">
+        <item>China</item>
+        <item>America</item>
+        <item>Cote D'Ivoire</item>
+        <item>Rwanda</item>
+        <item>Ghana</item>
+        <item>Nigeria</item>
+        <item>Tanzania</item>
+        <item>Malawi</item>
+        <item>Kenya</item>
+        <item>Cameroon</item>
+        <item>Burkina Faso</item>
+        <item>Egypt</item>
+    </string-array>
+    
+    <string-array name="language">
+        <item>跟随系统</item>
+        <item>简体中文</item>
+        <item>繁体中文（台湾）</item>
+        <item>繁体中文（香港）</item>
+        <item>English</item>
+    </string-array>
+
+    <!--common general festival-->
+    <string-array name="common">
+        <item >@array/com_jan</item>
+        <item >@array/com_feb</item>
+        <item >@array/com_mar</item>
+        <item >@array/com_apr</item>
+        <item >@array/com_may</item>
+        <item >@array/com_jun</item>
+        <item >@array/com_jul</item>
+        <item >@array/com_aug</item>
+        <item >@array/com_sep</item>
+        <item >@array/com_oct</item>
+        <item >@array/com_nov</item>
+        <item >@array/com_dec</item>
+    </string-array>
+
+    <string-array name="com_jan"><item >@string/new_year</item></string-array>
+    <string-array name="com_feb"><item >@string/valentine_day</item></string-array>
+    <string-array name="com_mar"><item >@string/women_day</item></string-array>
+    <string-array name="com_apr"/>
+    <string-array name="com_may"><item >@string/labour_day</item></string-array>
+    <string-array name="com_jun"/>
+    <string-array name="com_jul"/>
+    <string-array name="com_aug"/>
+    <string-array name="com_sep"/>
+    <string-array name="com_oct"/>
+    <string-array name="com_nov"/>
+    <string-array name="com_dec">
+        <item >@string/christmas</item>
+        <item >@string/boxing_day</item>
+    </string-array>
+
+    <!--JD festival-->
+    <string-array name="festival_jd">
+        <item >@string/good_friday</item>
+        <item >@string/holy_saturday</item>
+        <item >@string/easter_day</item>
+        <item >@string/easter_monday</item>
+        <item >@string/ascension_day</item>
+        <item >@string/Whit_Monday</item>
+    </string-array>
+
+    <!--orthodox festival-->
+    <string-array name="festival_orthodox">
+        <item >@string/coptic_good_friday</item>
+        <item >@string/coptic_holy_saturday</item>
+        <item >@string/coptic_easter_sunday</item>
+        <item >@string/spring_festival</item>
+    </string-array>
+
+    <!--calculate festival-->
+    <string-array name="festival_calculate">
+        <item >@string/father_day</item>
+        <item >@string/mother_day</item>
+        <item >@string/farmer_day</item>
+    </string-array>
+
+    <!--common islamic festival-->
+    <string-array name="islamic">
+        <item >@array/islamic_jan</item>
+        <item >@array/islamic_feb</item>
+        <item >@array/islamic_mar</item>
+        <item >@array/islamic_apr</item>
+        <item >@array/islamic_may</item>
+        <item >@array/islamic_jun</item>
+        <item >@array/islamic_jul</item>
+        <item >@array/islamic_aug</item>
+        <item >@array/islamic_sep</item>
+        <item >@array/islamic_oct</item>
+        <item >@array/islamic_nov</item>
+        <item >@array/islamic_dec</item>
+    </string-array>
+
+    <string-array name="islamic_jan"><item >@string/islamic_new_year</item></string-array>
+    <string-array name="islamic_feb"/>
+    <string-array name="islamic_mar"><item >@string/islamic_al_Nabi</item></string-array>
+    <string-array name="islamic_apr"/>
+    <string-array name="islamic_may"/>
+    <string-array name="islamic_jun"/>
+    <string-array name="islamic_jul"/>
+    <string-array name="islamic_aug"/>
+    <string-array name="islamic_sep"/>
+    <string-array name="islamic_oct"><item >@string/islamic_eid_al_fitr</item></string-array>
+    <string-array name="islamic_nov"/>
+    <string-array name="islamic_dec"><item >@string/islamic_eid_al_adha</item></string-array>
+
+
+    <!--America general festival-->
+    <string-array name="America">
+        <item >@array/America_jan</item>
+        <item >@array/America_feb</item>
+        <item >@array/America_mar</item>
+        <item >@array/America_apr</item>
+        <item >@array/America_may</item>
+        <item >@array/America_jun</item>
+        <item >@array/America_jul</item>
+        <item >@array/America_aug</item>
+        <item >@array/America_sep</item>
+        <item >@array/America_oct</item>
+        <item >@array/America_nov</item>
+        <item >@array/America_dec</item>
+    </string-array>
+
+    <string-array name="America_jan"><item >@string/new_year</item></string-array>
+    <string-array name="America_feb"><item >@string/valentine_day</item></string-array>
+    <string-array name="America_mar"><item >@string/women_day</item></string-array>
+    <string-array name="America_apr"><item >@string/fools_day</item></string-array>
+    <string-array name="America_may"><item >@string/labour_day</item></string-array>
+    <string-array name="America_jun"/>
+    <string-array name="America_jul"><item >@string/independence_day</item></string-array>
+    <string-array name="America_aug"/>
+    <string-array name="America_sep"/>
+    <string-array name="America_oct"/>
+    <string-array name="America_nov"><item >@string/all_saints_day</item></string-array>
+    <string-array name="America_dec">
+        <item >@string/christmas</item>
+        <item >@string/boxing_day</item>
+    </string-array>
+
+    <!--Nigeria general festival-->
+    <string-array name="Nigeria">
+        <item >@array/Nigeria_jan</item>
+        <item >@array/Nigeria_feb</item>
+        <item >@array/Nigeria_mar</item>
+        <item >@array/Nigeria_apr</item>
+        <item >@array/Nigeria_may</item>
+        <item >@array/Nigeria_jun</item>
+        <item >@array/Nigeria_jul</item>
+        <item >@array/Nigeria_aug</item>
+        <item >@array/Nigeria_sep</item>
+        <item >@array/Nigeria_oct</item>
+        <item >@array/Nigeria_nov</item>
+        <item >@array/Nigeria_dec</item>
+    </string-array>
+
+    <string-array name="Nigeria_jan"/>
+    <string-array name="Nigeria_feb"/>
+    <string-array name="Nigeria_mar"/>
+    <string-array name="Nigeria_apr"/>
+    <string-array name="Nigeria_may">
+        <item >@string/children_day</item>
+        <item >@string/democracy_day</item>
+    </string-array>
+    <string-array name="Nigeria_jun"><item >@string/commemoration_day</item></string-array>
+    <string-array name="Nigeria_jul"/>
+    <string-array name="Nigeria_aug"/>
+    <string-array name="Nigeria_sep"/>
+    <string-array name="Nigeria_oct"><item >@string/independence_day</item></string-array>
+    <string-array name="Nigeria_nov"/>
+    <string-array name="Nigeria_dec"><item >@string/new_year_eve</item></string-array>
+
+    <!--Kenya general festival-->
+    <string-array name="Kenya">
+        <item >@array/Kenya_jan</item>
+        <item >@array/Kenya_feb</item>
+        <item >@array/Kenya_mar</item>
+        <item >@array/Kenya_apr</item>
+        <item >@array/Kenya_may</item>
+        <item >@array/Kenya_jun</item>
+        <item >@array/Kenya_jul</item>
+        <item >@array/Kenya_aug</item>
+        <item >@array/Kenya_sep</item>
+        <item >@array/Kenya_oct</item>
+        <item >@array/Kenya_nov</item>
+        <item >@array/Kenya_dec</item>
+    </string-array>
+
+    <string-array name="Kenya_jan"/>
+    <string-array name="Kenya_feb"/>
+    <string-array name="Kenya_mar"/>
+    <string-array name="Kenya_apr"/>
+    <string-array name="Kenya_may"/>
+    <string-array name="Kenya_jun"><item >@string/madaraka_day</item></string-array>
+    <string-array name="Kenya_jul"/>
+    <string-array name="Kenya_aug"/>
+    <string-array name="Kenya_sep"/>
+    <string-array name="Kenya_oct"><item >@string/heroes_day</item></string-array>
+    <string-array name="Kenya_nov"/>
+    <string-array name="Kenya_dec">
+        <item >@string/independence_day</item>
+        <item >@string/new_year_eve</item>
+    </string-array>
+
+    <!--Tanzania general festival-->
+    <string-array name="Tanzania">
+        <item >@array/Tanzania_jan</item>
+        <item >@array/Tanzania_feb</item>
+        <item >@array/Tanzania_mar</item>
+        <item >@array/Tanzania_apr</item>
+        <item >@array/Tanzania_may</item>
+        <item >@array/Tanzania_jun</item>
+        <item >@array/Tanzania_jul</item>
+        <item >@array/Tanzania_aug</item>
+        <item >@array/Tanzania_sep</item>
+        <item >@array/Tanzania_oct</item>
+        <item >@array/Tanzania_nov</item>
+        <item >@array/Tanzania_dec</item>
+    </string-array>
+
+    <string-array name="Tanzania_jan"><item >@string/revolution_day</item></string-array>
+    <string-array name="Tanzania_feb"/>
+    <string-array name="Tanzania_mar"/>
+    <string-array name="Tanzania_apr">
+        <item >@string/karume_day</item>
+        <item >@string/union_day</item>
+    </string-array>
+    <string-array name="Tanzania_may"/>
+    <string-array name="Tanzania_jun"/>
+    <string-array name="Tanzania_jul"><item >@string/saba_saba_day</item></string-array>
+    <string-array name="Tanzania_aug"><item >@string/farmer_day</item></string-array>
+    <string-array name="Tanzania_sep"/>
+    <string-array name="Tanzania_oct"><item >@string/mwalimu_nyerere_day</item></string-array>
+    <string-array name="Tanzania_nov"/>
+    <string-array name="Tanzania_dec"><item >@string/independence_day</item></string-array>
+
+    <!--Ghana general festival-->
+    <string-array name="Ghana">
+        <item >@array/Ghana_jan</item>
+        <item >@array/Ghana_feb</item>
+        <item >@array/Ghana_mar</item>
+        <item >@array/Ghana_apr</item>
+        <item >@array/Ghana_may</item>
+        <item >@array/Ghana_jun</item>
+        <item >@array/Ghana_jul</item>
+        <item >@array/Ghana_aug</item>
+        <item >@array/Ghana_sep</item>
+        <item >@array/Ghana_oct</item>
+        <item >@array/Ghana_nov</item>
+        <item >@array/Ghana_dec</item>
+    </string-array>
+
+    <string-array name="Ghana_jan"/>
+    <string-array name="Ghana_feb"/>
+    <string-array name="Ghana_mar"><item >@string/independence_day</item></string-array>
+    <string-array name="Ghana_apr"/>
+    <string-array name="Ghana_may"><item >@string/african_union_day</item></string-array>
+    <string-array name="Ghana_jun"/>
+    <string-array name="Ghana_jul"><item >@string/republic_day</item></string-array>
+    <string-array name="Ghana_aug"/>
+    <string-array name="Ghana_sep"><item >@string/founder_day</item></string-array>
+    <string-array name="Ghana_oct"/>
+    <string-array name="Ghana_nov"/>
+    <string-array name="Ghana_dec"><item >@string/new_year_eve</item></string-array>
+
+    <!--Egypt general festival-->
+    <string-array name="Egypt">
+        <item >@array/Egypt_jan</item>
+        <item >@array/Egypt_feb</item>
+        <item >@array/Egypt_mar</item>
+        <item >@array/Egypt_apr</item>
+        <item >@array/Egypt_may</item>
+        <item >@array/Egypt_jun</item>
+        <item >@array/Egypt_jul</item>
+        <item >@array/Egypt_aug</item>
+        <item >@array/Egypt_sep</item>
+        <item >@array/Egypt_oct</item>
+        <item >@array/Egypt_nov</item>
+        <item >@array/Egypt_dec</item>
+    </string-array>
+
+    <string-array name="Egypt_jan">
+        <item >@string/new_year</item>
+        <item >@string/coptic_christmas_day</item>
+        <item >@string/revolution_day</item>
+    </string-array>
+    <string-array name="Egypt_feb"/>
+    <string-array name="Egypt_mar"/>
+    <string-array name="Egypt_apr"><item >@string/sinai_liberation_day</item></string-array>
+    <string-array name="Egypt_may"><item >@string/labour_day</item></string-array>
+    <string-array name="Egypt_jun"><item >@string/revolution_day</item></string-array>
+    <string-array name="Egypt_jul"><item >@string/revolution_day</item></string-array>
+    <string-array name="Egypt_aug"/>
+    <string-array name="Egypt_sep"/>
+    <string-array name="Egypt_oct"><item >@string/armed_forces_day</item></string-array>
+    <string-array name="Egypt_nov"/>
+    <string-array name="Egypt_dec"/>
+
+    <!--Cameroon general festival-->
+    <string-array name="Cameroon">
+        <item >@array/Cameroon_jan</item>
+        <item >@array/Cameroon_feb</item>
+        <item >@array/Cameroon_mar</item>
+        <item >@array/Cameroon_apr</item>
+        <item >@array/Cameroon_may</item>
+        <item >@array/Cameroon_jun</item>
+        <item >@array/Cameroon_jul</item>
+        <item >@array/Cameroon_aug</item>
+        <item >@array/Cameroon_sep</item>
+        <item >@array/Cameroon_oct</item>
+        <item >@array/Cameroon_nov</item>
+        <item >@array/Cameroon_dec</item>
+    </string-array>
+
+    <string-array name="Cameroon_jan"><item >@string/independence_day</item></string-array>
+    <string-array name="Cameroon_feb"><item >@string/youth_day</item></string-array>
+    <string-array name="Cameroon_mar"/>
+    <string-array name="Cameroon_apr"/>
+    <string-array name="Cameroon_may"><item >@string/national_day</item></string-array>
+    <string-array name="Cameroon_jun"/>
+    <string-array name="Cameroon_jul"/>
+    <string-array name="Cameroon_aug"><item >@string/assumption_day</item></string-array>
+    <string-array name="Cameroon_sep"/>
+    <string-array name="Cameroon_oct"><item >@string/gameroons_independence_day</item></string-array>
+    <string-array name="Cameroon_nov"/>
+    <string-array name="Cameroon_dec"/>
+
+    <!--Rwanda general festival-->
+    <string-array name="Rwanda">
+        <item >@array/Rwanda_jan</item>
+        <item >@array/Rwanda_feb</item>
+        <item >@array/Rwanda_mar</item>
+        <item >@array/Rwanda_apr</item>
+        <item >@array/Rwanda_may</item>
+        <item >@array/Rwanda_jun</item>
+        <item >@array/Rwanda_jul</item>
+        <item >@array/Rwanda_aug</item>
+        <item >@array/Rwanda_sep</item>
+        <item >@array/Rwanda_oct</item>
+        <item >@array/Rwanda_nov</item>
+        <item >@array/Rwanda_dec</item>
+    </string-array>
+
+    <string-array name="Rwanda_jan"/>
+    <string-array name="Rwanda_feb"><item >@string/heroes_day</item></string-array>
+    <string-array name="Rwanda_mar"/>
+    <string-array name="Rwanda_apr"><item >@string/national_day</item></string-array>
+    <string-array name="Rwanda_may"/>
+    <string-array name="Rwanda_jun"/>
+    <string-array name="Rwanda_jul">
+        <item >@string/independence_day</item>
+        <item >@string/liberation_day</item>
+    </string-array>
+    <string-array name="Rwanda_aug"><item >@string/assumption_day</item></string-array>
+    <string-array name="Rwanda_sep"/>
+    <string-array name="Rwanda_oct"/>
+    <string-array name="Rwanda_nov"/>
+    <string-array name="Rwanda_dec"/>
+
+    <!--Cote general festival-->
+    <string-array name="Cote">
+        <item >@array/Cote_jan</item>
+        <item >@array/Cote_feb</item>
+        <item >@array/Cote_mar</item>
+        <item >@array/Cote_apr</item>
+        <item >@array/Cote_may</item>
+        <item >@array/Cote_jun</item>
+        <item >@array/Cote_jul</item>
+        <item >@array/Cote_aug</item>
+        <item >@array/Cote_sep</item>
+        <item >@array/Cote_oct</item>
+        <item >@array/Cote_nov</item>
+        <item >@array/Cote_dec</item>
+    </string-array>
+
+    <string-array name="Cote_jan"/>
+    <string-array name="Cote_feb"/>
+    <string-array name="Cote_mar"/>
+    <string-array name="Cote_apr"/>
+    <string-array name="Cote_may"/>
+    <string-array name="Cote_jun"><item >@string/music</item></string-array>
+    <string-array name="Cote_jul"/>
+    <string-array name="Cote_aug">
+        <item >@string/independence_day</item>
+        <item >@string/assumption_day</item>
+    </string-array>
+    <string-array name="Cote_sep"/>
+    <string-array name="Cote_oct"/>
+    <string-array name="Cote_nov">
+        <item >@string/all_saints_day</item>
+        <item >@string/national_peace_day</item>
+    </string-array>
+    <string-array name="Cote_dec"/>
+
+    <!--Islamic_cote general festival-->
+    <string-array name="Islamic_cote">
+        <item >@array/Islamic_cote_jan</item>
+        <item >@array/Islamic_cote_feb</item>
+        <item >@array/Islamic_cote_mar</item>
+        <item >@array/Islamic_cote_apr</item>
+        <item >@array/Islamic_cote_may</item>
+        <item >@array/Islamic_cote_jun</item>
+        <item >@array/Islamic_cote_jul</item>
+        <item >@array/Islamic_cote_aug</item>
+        <item >@array/Islamic_cote_sep</item>
+        <item >@array/Islamic_cote_oct</item>
+        <item >@array/Islamic_cote_nov</item>
+        <item >@array/Islamic_cote_dec</item>
+    </string-array>
+
+    <string-array name="Islamic_cote_jan"/>
+    <string-array name="Islamic_cote_feb"/>
+    <string-array name="Islamic_cote_mar"/>
+    <string-array name="Islamic_cote_apr"/>
+    <string-array name="Islamic_cote_may"/>
+    <string-array name="Islamic_cote_jun"/>
+    <string-array name="Islamic_cote_jul"/>
+    <string-array name="Islamic_cote_aug"/>
+    <string-array name="Islamic_cote_sep"><item >@string/islamic_laila_tou_kadr</item></string-array>
+    <string-array name="Islamic_cote_oct"/>
+    <string-array name="Islamic_cote_nov"/>
+    <string-array name="Islamic_cote_dec"/>
+
+    <!--Burkina general festival-->
+    <string-array name="Burkina">
+        <item >@array/Burkina_jan</item>
+        <item >@array/Burkina_feb</item>
+        <item >@array/Burkina_mar</item>
+        <item >@array/Burkina_apr</item>
+        <item >@array/Burkina_may</item>
+        <item >@array/Burkina_jun</item>
+        <item >@array/Burkina_jul</item>
+        <item >@array/Burkina_aug</item>
+        <item >@array/Burkina_sep</item>
+        <item >@array/Burkina_oct</item>
+        <item >@array/Burkina_nov</item>
+        <item >@array/Burkina_dec</item>
+    </string-array>
+
+    <string-array name="Burkina_jan"/>
+    <string-array name="Burkina_feb"/>
+    <string-array name="Burkina_mar"/>
+    <string-array name="Burkina_apr"/>
+    <string-array name="Burkina_may"/>
+    <string-array name="Burkina_jun"/>
+    <string-array name="Burkina_jul"/>
+    <string-array name="Burkina_aug"><item >@string/assumption_day</item></string-array>
+    <string-array name="Burkina_sep"/>
+    <string-array name="Burkina_oct"/>
+    <string-array name="Burkina_nov"><item >@string/all_saints_day</item></string-array>
+    <string-array name="Burkina_dec"/>
+
+    <!--Malawi general festival-->
+    <string-array name="Malawi">
+        <item >@array/Malawi_jan</item>
+        <item >@array/Malawi_feb</item>
+        <item >@array/Malawi_mar</item>
+        <item >@array/Malawi_apr</item>
+        <item >@array/Malawi_may</item>
+        <item >@array/Malawi_jun</item>
+        <item >@array/Malawi_jul</item>
+        <item >@array/Malawi_aug</item>
+        <item >@array/Malawi_sep</item>
+        <item >@array/Malawi_oct</item>
+        <item >@array/Malawi_nov</item>
+        <item >@array/Malawi_dec</item>
+    </string-array>
+
+    <string-array name="Malawi_jan"/>
+    <string-array name="Malawi_feb"/>
+    <string-array name="Malawi_mar"><item >@string/martyrs_day</item></string-array>
+    <string-array name="Malawi_apr"/>
+    <string-array name="Malawi_may"><item >@string/kamuzu_day</item></string-array>
+    <string-array name="Malawi_jun"><item >@string/freedom_day</item></string-array>
+    <string-array name="Malawi_jul"><item >@string/independence_day</item></string-array>
+    <string-array name="Malawi_aug"/>
+    <string-array name="Malawi_sep"/>
+    <string-array name="Malawi_oct"><item >@string/mother_day</item></string-array>
+    <string-array name="Malawi_nov"/>
+    <string-array name="Malawi_dec"/>
+</resources>

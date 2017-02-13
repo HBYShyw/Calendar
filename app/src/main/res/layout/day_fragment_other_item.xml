@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/festival_label_parent_height"
+    android:background="@color/header_background">
+
+    <ImageView
+        android:id="@+id/festival_label_img"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/festival_front_circle" />
+
+    <TextView
+        android:id="@+id/festival_label_tv"
+        style="@style/TextAppearance.Festival_DayLabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/festival_label_img" />
+
+    <View
+        android:id="@+id/festival_label_View"
+        style="@style/grid_lines"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

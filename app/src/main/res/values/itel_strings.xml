@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ringtone_default">"Default ringtone"</string>
+    <!--common festival-->
+    <string name="new_year">New Year</string>
+    <string name="valentine_day">Valentine\'s Day</string>
+    <string name="women_day">Women\'s Day</string>
+    <string name="labour_day">Labor Day</string>
+    <string name="christmas">Christmas Day</string>
+    <string name="boxing_day">Boxing Day</string>
+    <string name="good_friday">Good Friday</string>
+    <string name="holy_saturday">Holy Saturday</string>
+    <string name="easter_day">Easter Day</string>
+    <string name="easter_monday">Easter Monday</string>
+    <string name="father_day">Fathers\' Day</string>
+    <string name="mother_day">Mothers\' Day</string>
+    <!--Al-Hijra-->
+    <string name="islamic_new_year">Islamic New Year</string>
+    <!--Maulid al-Nabi-->
+    <string name="islamic_al_Nabi">Prophet Mohamed\'s birthday</string>
+    <!--开斋节-->
+    <string name="islamic_eid_al_fitr">Eid al-Fitr</string>
+    <!--Eid Al Adha-->
+    <string name="islamic_eid_al_adha">Eid al-Adha</string>
+    <!--计算部分共同节日-->
+    <string name="ascension_day">Ascension Day</string>
+    <string name="Whit_Monday">Whit Monday</string>
+    <string name="farmer_day">Farmer\'s Day</string>
+    <!--部分相同节日-->
+    <string name="independence_day">Independence Day</string>
+    <string name="new_year_eve">New Year\'s Eve</string>
+    <string name="children_day">Children\'s Day</string>
+    <string name="assumption_day">Assumption Day</string>
+    
+    <!--Nigeria-->
+    <string name="democracy_day">Democracy Day</string>
+    <string name="commemoration_day">Commemoration Day</string>
+
+    <!--Cote d'Ivoire-->
+    <string name="music">Music Festival</string>
+    <string name="islamic_laila_tou_kadr">Laila tou-Kadr</string>
+    <string name="all_saints_day">All Saints\' Day</string>
+    <string name="national_peace_day">National Peace Day</string>
+
+    <!--Rwanda-->
+    <string name="liberation_day">Liberation Day</string>
+    <string name="genocide_memorial_day">Tutsi Genocide Memorial Day</string>
+
+    <!--Ghana-->
+    <string name="african_union_day">African Union Day</string>
+    <string name="republic_day">Republic Day</string>
+    <string name="founder_day">Founder\'s Day</string>
+
+    <!--Tanzania-->
+    <string name="karume_day">Karume Day</string>
+    <string name="union_day">Union Day</string>
+    <string name="saba_saba_day">Saba Saba Day</string>
+    <string name="mwalimu_nyerere_day">Mwalimu Nyerere Day</string>
+
+    <!--Malawi-->
+    <string name="martyrs_day">Martyrs\' Day</string>
+    <string name="kamuzu_day">Kamuzu Day</string>
+    <string name="freedom_day">Freedom Day</string>
+
+    <!--Kenya-->
+    <string name="madaraka_day">Madaraka Day</string>
+    <!--Cameroon-->
+    <string name="youth_day">Youth Day</string>
+    <string name="national_day">National Day</string>
+    <string name="gameroons_independence_day">Independence of Southern British Cameroons from UK</string>
+
+    <!--Egypt-->
+    <string name="coptic_christmas_day">Coptic Christmas Day</string>
+    <string name="revolution_day">Revolution Day</string>
+    <string name="sinai_liberation_day">Sinai Liberation Day</string>
+    <string name="coptic_good_friday">Coptic Good Friday</string>
+    <string name="coptic_holy_saturday">Coptic Holy Saturday</string>
+    <string name="coptic_easter_sunday">Coptic Easter Sunday</string>
+    <string name="spring_festival">Spring Festival</string>
+    <string name="armed_forces_day">Armed Forces Day</string>
+
+    <!--America-->
+    <string name="fools_day">All Fools\' Day</string>
+
+    <!--setting String-->
+    <string name="festival_setting">Festival setting</string>
+    <string name="country_festival_display">Show default festival</string>
+    <string name="system_default">Follow_system</string>
+    <string name="manual_select">Manual match</string>
+    <string name="select_country">Country setting</string>
+</resources>

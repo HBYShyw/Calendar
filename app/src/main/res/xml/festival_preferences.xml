@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="festival_setting"
+        android:summary="@string/festival_setting"
+        android:title="@string/festival_setting">
+        <CheckBoxPreference
+            android:key="follow_system"
+            android:defaultValue="true"
+            android:checked="true"
+            android:summary="@string/country_festival_display"
+            android:title="@string/system_default"/>
+        <!--android:title="system default"-->
+        <ListPreference
+            android:key="Countries"
+            android:enabled="false"
+            android:dialogTitle="@string/select_country"
+            android:entries="@array/countries"
+            android:entryValues="@array/countries"
+            android:summary="@string/click_popup_list"
+            android:title="@string/manual_select">
+            <!--android:summary 标题下面的小字,这个要作为选项卡才有-->
+        </ListPreference>
+    </PreferenceCategory>
+</PreferenceScreen>
